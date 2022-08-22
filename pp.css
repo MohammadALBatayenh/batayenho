@@ -230,4 +230,30 @@ footer .content-foter .end{
     color: blue;
     margin-top: 1rem;
 }
+.slider{
+    width: 300px;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul {
+    padding: 0%;
+    width: 1500px;
+list-style: none;
+position: relative;
+animation:sliding 15s ease-in-out infinite
+}
+.slider ul li{
+    position: relative;
+    float: left;
+}
 
+    @keyframes sliding {
+        0%{
+    left: 0%;
+        }
+        50%{
+            left: -300px;
+        }
+        100%{
+            left: -600px;
+        }
